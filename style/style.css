@@ -24,6 +24,7 @@ body{
     flex-direction: row;
     justify-content: space-between;
     padding: 8px;
+    color: #f9faf8;
 }
 .footer{
     display: flex;
@@ -87,5 +88,27 @@ button{
 }
 
 /* extra info */
+.info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.info-head{
+    font-size: 36px;
+    font-weight: 800;
+    color: #1f2937;
+}
+
+.box-container{
+    display: flex;
+}
+
+.boxes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}   
 
 
