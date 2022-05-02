@@ -4,11 +4,13 @@
 body{
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    font-family: sans-serif; 
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; 
+    margin: 0;
+    min-height: 100vh; 
+    flex:1;
+
 }
-
-
+ 
 /* header and footer */
 
 .header,
@@ -22,10 +24,10 @@ body{
     display: flex;
     font-size: 24px;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     color: #f9faf8;
-    padding-left: 16px;
-    padding-right: 16px;
+    padding: 8px;
+
 }
 .footer{
     display: flex;
@@ -36,10 +38,16 @@ body{
     color: #e5e7eb;
 }
 
+.logo-links{
+    display: flex;
+    align-items: center;
+}
+
 a{
     text-decoration: none;
     color:#e5e7eb;
     font-size: 18px;
+    padding: 8px;
 }
 
 /* main content */
@@ -94,6 +102,7 @@ button{
     flex-direction: column;
     align-items: center;
     flex: 1;
+    
 }
 
 .info-head{
@@ -123,7 +132,7 @@ button{
 .box{
    width: 100px; 
    height: 100px;
-   border: 8px solid #3882f6;
+   border: 4px solid #3882f6;
    border-radius: 20px;
 }
 
@@ -134,12 +143,18 @@ button{
 .call{
     display: flex;
     background-color: #3882f6;
-    padding: 32px 200px;
-    border-radius: 20px;
+    margin: 32px;
+    border-radius: 16px;
     align-items: center;
-    justify-content: center;
-    flex-direction: column;
+    justify-content: space-evenly;
     color: #f9faf8;
+
+}
+.call-title{
+    font-weight: 800;
+}
+.call-subtext{
+    color: #e5e7eb;
 }
 
 /* quote */
@@ -150,7 +165,18 @@ button{
     color:#1f2937;
     font-size: 36px;
     font-style: italic;
-    justify-content: center;
+    justify-content: space-between;
     font-weight: 100;
-    padding: 32px
+    padding: 32px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.quote-info{
+    font-weight: 500;
+}
+
+.quote-name{
+    font-size: 16px;
+    font-weight: 700;
 }
